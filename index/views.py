@@ -10,6 +10,6 @@ def Upload(request):
                 for chunk in f.chunks():
                     destination.write(chunk)
         process(x)
-    return HttpResponse("Files Uploaded on %s"% MEDIA_ROOT)
+    return HttpResponse("Files Uploaded ")
 
 # Create your views here.
